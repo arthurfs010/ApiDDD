@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\" />
+    <None Remove="CrossCutting\" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Data\Repositories\" />
+    <None Remove="CrossCutting\IOC\" />
+    <None Remove="Autofac" />
+    <None Remove="Npgsql.EntityFrameworkCore.PostgreSQL" />
+    <None Remove="EFUtilities" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="CrossCutting\" />
+    <Folder Include="Data\Repositories\" />
+    <Folder Include="CrossCutting\IOC\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApiDDD.Domain\ApiDDD.Domain.csproj" />
+    <ProjectReference Include="..\ApiDDD.Application\ApiDDD.Application.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.5.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.10" />
+  </ItemGroup>
+</Project>

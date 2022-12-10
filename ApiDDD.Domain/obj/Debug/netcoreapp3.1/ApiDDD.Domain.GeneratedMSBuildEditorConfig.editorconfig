@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = ApiDDD.Domain
+build_property.ProjectDir = /Users/arthur/Documents/Projetos/ApiDDD/ApiDDD.Domain/

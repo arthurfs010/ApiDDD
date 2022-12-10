@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{A09F01C0-EC26-4E3B-83D8-25A1F6AB75E9}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.ApiDDD.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ApiDDD.Infraestructure/Data/Repositories/RepositoryProduto.cs">
+    <Files>
+      <File FileName="ApiDDD.API/Controllers/ProdutoController.cs" />
+      <File FileName="ApiDDD.Infraestructure/Data/SqlContext.cs" />
+      <File FileName="ApiDDD.Application/ApplicationServiceProduto.cs" />
+      <File FileName="ApiDDD.Infraestructure/Data/Repositories/RepositoryProduto.cs" Line="15" Column="56" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ApiDDD" expanded="True">
+            <Node name="ApiDDD.API" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="ApiDDD.Infraestructure" expanded="True">
+              <Node name="Data" expanded="True">
+                <Node name="Repositories" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+</Properties>
