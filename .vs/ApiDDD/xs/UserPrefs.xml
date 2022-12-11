@@ -1,20 +1,20 @@
 ﻿<Properties StartupConfiguration="{A09F01C0-EC26-4E3B-83D8-25A1F6AB75E9}|Default">
-  <MonoDevelop.Ide.ItemProperties.ApiDDD.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="ApiDDD.Infraestructure/Data/Repositories/RepositoryProduto.cs">
     <Files>
       <File FileName="ApiDDD.API/Controllers/ProdutoController.cs" />
       <File FileName="ApiDDD.Infraestructure/Data/SqlContext.cs" />
       <File FileName="ApiDDD.Application/ApplicationServiceProduto.cs" />
-      <File FileName="ApiDDD.Infraestructure/Data/Repositories/RepositoryProduto.cs" Line="41" Column="25" />
+      <File FileName="ApiDDD.Infraestructure/Data/Repositories/RepositoryProduto.cs" Line="16" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ApiDDD" expanded="True">
-            <Node name="ApiDDD.API" expanded="True">
-              <Node name="Controllers" expanded="True" />
+            <Node name="ApiDDD.API" expanded="True" />
+            <Node name="ApiDDD.Application" expanded="True">
+              <Node name="ConnectedServicesFolder" selected="True" />
             </Node>
+            <Node name="ApiDDD.Domain" expanded="True" />
             <Node name="ApiDDD.Infraestructure" expanded="True">
               <Node name="Data" expanded="True">
                 <Node name="Repositories" expanded="True" />
@@ -25,9 +25,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ApiDDD.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

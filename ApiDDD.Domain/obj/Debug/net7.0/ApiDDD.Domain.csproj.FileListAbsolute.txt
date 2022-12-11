@@ -1,5 +1,0 @@
-/Users/arthur/Documents/Projetos/ApiDDD/ApiDDD.Domain/obj/Debug/net7.0/ApiDDD.Domain.csproj.AssemblyReference.cache
-/Users/arthur/Documents/Projetos/ApiDDD/ApiDDD.Domain/obj/Debug/net7.0/ApiDDD.Domain.GeneratedMSBuildEditorConfig.editorconfig
-/Users/arthur/Documents/Projetos/ApiDDD/ApiDDD.Domain/obj/Debug/net7.0/ApiDDD.Domain.AssemblyInfoInputs.cache
-/Users/arthur/Documents/Projetos/ApiDDD/ApiDDD.Domain/obj/Debug/net7.0/ApiDDD.Domain.AssemblyInfo.cs
-/Users/arthur/Documents/Projetos/ApiDDD/ApiDDD.Domain/obj/Debug/net7.0/ApiDDD.Domain.csproj.CoreCompileInputs.cache
