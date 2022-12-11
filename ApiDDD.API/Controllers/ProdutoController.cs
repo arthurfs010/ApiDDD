@@ -1,17 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using ApiDDD.Application;
 using ApiDDD.Application.DTO;
 using ApiDDD.Application.Interface;
+using ApiDDD.Domain.Entities;
+using ApiDDD.Infraestructure.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Query;
+using Microsoft.AspNetCore.OData.Routing.Controllers;
 
 namespace ApiDDD.API.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class ProdutoController : ControllerBase
+    public class ProdutoController : ODataController
     {
         private readonly IApplicationServiceProduto _applicationServiceProduto;
 
@@ -20,16 +25,30 @@ namespace ApiDDD.API.Controllers
             _applicationServiceProduto = applicationServiceProduto;
         }
 
-        [HttpGet("{codigo}")]
-        public ActionResult<string> Get(int codigo)
+        [HttpGet("codigo={codigo:int}")]
+        public ActionResult<string> GetByCodigo(int codigo)
         {
             return Ok(_applicationServiceProduto.GetByCodigo(codigo));
         }
 
-        [HttpGet]
-        public ActionResult<string> GetAll()
+        [HttpGet("iteminicio={inicio:int}/maxitens={itens:int}")]
+        [EnableQuery]
+        public IEnumerable<ProdutoDTO> GetAllComPagEQuery(int inicio = 0, int itens = 25)
         {
-            return Ok(_applicationServiceProduto.GetAll());
+            itens = itens < 1 ? 25 : itens;
+
+            var prods = _applicationServiceProduto.GetAll(inicio, itens);
+
+            return prods;
+        }
+
+        [HttpGet]
+        [EnableQuery]
+        public IEnumerable<ProdutoDTO> GetAllComQuery(int inicio = 0, int itens = 1000)
+        {
+            var prods = _applicationServiceProduto.GetAll(inicio, itens);
+
+            return prods;
         }
 
         [HttpPost]

@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ApiDDD.Domain.Entities;
 using ApiDDD.Infraestructure.CrossCutting.IOC;
 using ApiDDD.Infraestructure.Data;
 using Autofac;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.OData;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -30,14 +32,13 @@ namespace ApiDDD.API
         {
             var connection = Configuration["SqlConnection:SqlConnectionString"];
             services.AddDbContext<SqlContext>(db => db.UseNpgsql(connection));
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson().AddOData(opt => opt.Count().Filter().Expand().Select().OrderBy().SetMaxTop(100));
             services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_3_0);
+            
             services.AddSwaggerGen(s =>
             {
                 s.SwaggerDoc("v1", new OpenApiInfo { Title = "API DDD Arthur", Version = "v1"});
-
             });
-            
         }
 
         public void ConfigureContainer(ContainerBuilder builder)

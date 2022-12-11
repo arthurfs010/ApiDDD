@@ -10,7 +10,7 @@ namespace ApiDDD.Domain.ApiDDD.Domain.Core.Interfaces.Service
 
         void Update(TEntity obj);
 
-        IEnumerable<TEntity> GetAll();
+        IEnumerable<TEntity> GetAll(int skip, int take);
 
         TEntity GetByCodigo(int codigo);
     }

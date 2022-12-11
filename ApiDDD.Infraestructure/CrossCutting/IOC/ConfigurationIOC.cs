@@ -26,7 +26,8 @@ namespace ApiDDD.Infraestructure.CrossCutting.IOC
 			}));
 
 			builder.Register(reg => reg.Resolve<MapperConfiguration>().CreateMapper()).As<IMapper>().InstancePerLifetimeScope();
+
         }
-	}
+    }
 }
 

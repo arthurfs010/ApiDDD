@@ -9,7 +9,7 @@ namespace ApiDDD.Domain.Core.Interfaces.Repository
 
 		void Update(TEntity obj);
 
-        IEnumerable<TEntity> GetAll();
+        IEnumerable<TEntity> GetAll(int skip, int take);
 
 		TEntity GetByCodigo(int codigo);
 	}

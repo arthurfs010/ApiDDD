@@ -8,11 +8,17 @@
     <None Remove="Swashbuckle.AspNetCore" />
     <None Remove="Autofac" />
     <None Remove="Autofac.Extensions.DependencyInjection" />
+    <None Remove="Microsoft.AspNet.WebApi.OData" />
+    <None Remove="Microsoft.AspNetCore.Mvc.NewtonsoftJson" />
+    <None Remove="Microsoft.AspNetCore.OData" />
+    <None Remove="Microsoft.AspNet.OData" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     <PackageReference Include="Autofac" Version="6.5.0" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.17" />
+    <PackageReference Include="Microsoft.AspNetCore.OData" Version="8.0.12" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ApiDDD.Infraestructure\ApiDDD.Infraestructure.csproj">

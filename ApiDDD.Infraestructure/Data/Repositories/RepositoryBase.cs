@@ -41,9 +41,9 @@ namespace ApiDDD.Infraestructure.Data.Repositories
             }
         }
 
-        public IEnumerable<TEntity> GetAll()
+        public IEnumerable<TEntity> GetAll(int skip, int take)
         {
-            return _sqlContext.Set<TEntity>().ToList();
+            return _sqlContext.Set<TEntity>().Skip(skip).Take(take).ToList();
         }
 
         public TEntity GetByCodigo(int codigo)

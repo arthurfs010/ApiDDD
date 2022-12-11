@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using ApiDDD.Application.DTO;
 using ApiDDD.Application.Interface;
 using ApiDDD.Domain.ApiDDD.Domain.Core.Interfaces.Service;
@@ -19,9 +20,9 @@ namespace ApiDDD.Application
             _mapper = mapper;
         }
 
-        public IEnumerable<ProdutoDTO> GetAll()
+        public IEnumerable<ProdutoDTO> GetAll(int skip, int take)
         {
-            var produtos = _serviceProduto.GetAll();
+            var produtos = _serviceProduto.GetAll(skip, take);
 
             return _mapper.Map<IEnumerable<ProdutoDTO>>(produtos);
         }

@@ -14,9 +14,9 @@ namespace ApiDDD.Domain.ApiDDD.Domain.Services
             _repositoryBase = repositoryBase;
         }
 
-        public IEnumerable<TEntity> GetAll()
+        public IEnumerable<TEntity> GetAll(int skip, int take)
         {
-            return _repositoryBase.GetAll();
+            return _repositoryBase.GetAll(skip, take);
         }
 
         public TEntity GetByCodigo(int codigo)

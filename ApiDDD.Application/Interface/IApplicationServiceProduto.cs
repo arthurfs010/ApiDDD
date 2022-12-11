@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using ApiDDD.Application.DTO;
 
 namespace ApiDDD.Application.Interface
@@ -12,7 +13,7 @@ namespace ApiDDD.Application.Interface
 
 		void Update(ProdutoDTO produtoDTO);
 
-		IEnumerable<ProdutoDTO> GetAll();
+		IEnumerable<ProdutoDTO> GetAll(int skip, int take);
 
 		ProdutoDTO GetByCodigo(int codigo);
 	}

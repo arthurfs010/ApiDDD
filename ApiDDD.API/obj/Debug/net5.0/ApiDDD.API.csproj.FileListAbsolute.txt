@@ -133,3 +133,13 @@
 /Users/arthur/Projects/ApiDDD/ApiDDD.API/obj/Debug/net5.0/ApiDDD.API.pdb
 /Users/arthur/Projects/ApiDDD/ApiDDD.API/obj/Debug/net5.0/ApiDDD.API.genruntimeconfig.cache
 /Users/arthur/Projects/ApiDDD/ApiDDD.API/obj/Debug/net5.0/ref/ApiDDD.API.dll
+/Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/Newtonsoft.Json.dll
+/Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/Microsoft.AspNetCore.JsonPatch.dll
+/Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/Microsoft.AspNetCore.OData.dll
+/Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/Microsoft.OData.Core.dll
+/Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/Microsoft.OData.Edm.dll
+/Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/Microsoft.OData.ModelBuilder.dll
+/Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/Microsoft.Spatial.dll
+/Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/Newtonsoft.Json.Bson.dll
