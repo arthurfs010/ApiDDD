@@ -22,8 +22,7 @@ namespace ApiDDD.Infraestructure.CrossCutting.IOC
 
 			builder.Register(reg => new MapperConfiguration(cfg =>
 			{
-				cfg.AddProfile(new DtoToModelMappingProduto());
-				cfg.AddProfile(new ModelToDtoMappingProduto());
+				cfg.AddProfile(new MapperProduto());
 			}));
 
 			builder.Register(reg => reg.Resolve<MapperConfiguration>().CreateMapper()).As<IMapper>().InstancePerLifetimeScope();
