@@ -10,15 +10,3 @@
 /Users/arthur/Documents/Projetos/ApiDDD/ApiDDD.Domain/obj/Debug/net5.0/refint/ApiDDD.Domain.dll
 /Users/arthur/Documents/Projetos/ApiDDD/ApiDDD.Domain/obj/Debug/net5.0/ApiDDD.Domain.pdb
 /Users/arthur/Documents/Projetos/ApiDDD/ApiDDD.Domain/obj/Debug/net5.0/ref/ApiDDD.Domain.dll
-/Users/arthur/Projects/ApiDDD/ApiDDD.Domain/bin/Debug/net5.0/ApiDDD.Domain.deps.json
-/Users/arthur/Projects/ApiDDD/ApiDDD.Domain/bin/Debug/net5.0/ApiDDD.Domain.dll
-/Users/arthur/Projects/ApiDDD/ApiDDD.Domain/bin/Debug/net5.0/ApiDDD.Domain.pdb
-/Users/arthur/Projects/ApiDDD/ApiDDD.Domain/obj/Debug/net5.0/ApiDDD.Domain.csproj.AssemblyReference.cache
-/Users/arthur/Projects/ApiDDD/ApiDDD.Domain/obj/Debug/net5.0/ApiDDD.Domain.GeneratedMSBuildEditorConfig.editorconfig
-/Users/arthur/Projects/ApiDDD/ApiDDD.Domain/obj/Debug/net5.0/ApiDDD.Domain.AssemblyInfoInputs.cache
-/Users/arthur/Projects/ApiDDD/ApiDDD.Domain/obj/Debug/net5.0/ApiDDD.Domain.AssemblyInfo.cs
-/Users/arthur/Projects/ApiDDD/ApiDDD.Domain/obj/Debug/net5.0/ApiDDD.Domain.csproj.CoreCompileInputs.cache
-/Users/arthur/Projects/ApiDDD/ApiDDD.Domain/obj/Debug/net5.0/ApiDDD.Domain.dll
-/Users/arthur/Projects/ApiDDD/ApiDDD.Domain/obj/Debug/net5.0/refint/ApiDDD.Domain.dll
-/Users/arthur/Projects/ApiDDD/ApiDDD.Domain/obj/Debug/net5.0/ApiDDD.Domain.pdb
-/Users/arthur/Projects/ApiDDD/ApiDDD.Domain/obj/Debug/net5.0/ref/ApiDDD.Domain.dll

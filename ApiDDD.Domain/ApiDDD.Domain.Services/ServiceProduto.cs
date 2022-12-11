@@ -23,6 +23,10 @@ namespace ApiDDD.Domain.ApiDDD.Domain.Services
             }
             catch (Exception ex)
             {
+                if (ex.InnerException.InnerException.Message.Contains("refused") ||
+                    ex.InnerException.InnerException.Message.Contains("recusada"))
+                    throw new Exception("Erro ao conectar-se ao banco de dados! Verifique.");
+
                 throw new Exception("Erro ao pegar novo código!");
             }
         }

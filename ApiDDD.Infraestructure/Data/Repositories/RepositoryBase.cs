@@ -6,9 +6,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 
 namespace ApiDDD.Infraestructure.Data.Repositories
 {
-	public class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : class
-	{
-		private readonly SqlContext _sqlContext;
+    public class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : class
+    {
+        private readonly SqlContext _sqlContext;
 
         public RepositoryBase(SqlContext sqlContext)
         {
@@ -37,18 +37,44 @@ namespace ApiDDD.Infraestructure.Data.Repositories
             }
             catch (Exception ex)
             {
+                if (ex.InnerException.InnerException.Message.Contains("refused") ||
+                    ex.InnerException.InnerException.Message.Contains("recusada"))
+                    throw new Exception("Erro ao conectar-se ao banco de dados! Verifique.");
+
                 throw new Exception("Erro ao atualizar: " + ex);
             }
         }
 
         public IEnumerable<TEntity> GetAll(int skip, int take)
         {
-            return _sqlContext.Set<TEntity>().Skip(skip).Take(take).ToList();
+            try
+            {
+                return _sqlContext.Set<TEntity>().Skip(skip).Take(take).ToList();
+            }
+            catch (Exception ex)
+            {
+                if (ex.InnerException.InnerException.Message.Contains("refused") ||
+                    ex.InnerException.InnerException.Message.Contains("recusada"))
+                    throw new Exception("Erro ao conectar-se ao banco de dados! Verifique.");
+
+                throw ex;
+            }
         }
 
         public TEntity GetByCodigo(int codigo)
         {
-            return _sqlContext.Set<TEntity>().Find(codigo);
+            try
+            {
+                return _sqlContext.Set<TEntity>().Find(codigo);
+            }
+            catch (Exception ex)
+            {
+                if (ex.InnerException.InnerException.Message.Contains("refused") ||
+                    ex.InnerException.InnerException.Message.Contains("recusada"))
+                    throw new Exception("Erro ao conectar-se ao banco de dados! Verifique.");
+
+                throw ex;
+            }
         }
     }
 }

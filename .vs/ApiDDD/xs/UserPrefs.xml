@@ -1,24 +1,20 @@
 ﻿<Properties StartupConfiguration="{A09F01C0-EC26-4E3B-83D8-25A1F6AB75E9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ApiDDD.Infraestructure/CrossCutting/IOC/ConfigurationIOC.cs">
+  <MonoDevelop.Ide.ItemProperties.ApiDDD.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ApiDDD.API/Controllers/ProdutoController.cs">
     <Files>
-      <File FileName="ApiDDD.API/Controllers/ProdutoController.cs" Line="15" Column="6" />
-      <File FileName="ApiDDD.Infraestructure/CrossCutting/IOC/ConfigurationIOC.cs" Line="30" Column="3" />
-      <File FileName="ApiDDD.Application/ApplicationServiceProduto.cs" Line="1" Column="1" />
-      <File FileName="ApiDDD.Application/Mapper/DtoToModelMappingProduto.cs" Line="11" Column="4" />
+      <File FileName="ApiDDD.Infraestructure/Data/Repositories/RepositoryBase.cs" Line="44" Column="27" />
+      <File FileName="ApiDDD.API/Startup.cs" Line="73" Column="1" />
+      <File FileName="ApiDDD.API/Controllers/ProdutoController.cs" Line="45" Column="18" />
+      <File FileName="ApiDDD.API/Program.cs" Line="16" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ApiDDD" expanded="True">
-            <Node name="ApiDDD.Application" expanded="True">
-              <Node name="DTO" expanded="True" />
-              <Node name="Interface" expanded="True" />
-              <Node name="Mapper" expanded="True" />
-            </Node>
-            <Node name="ApiDDD.Domain" expanded="True" />
             <Node name="ApiDDD.Infraestructure" expanded="True">
-              <Node name="CrossCutting" expanded="True">
-                <Node name="IOC" expanded="True" />
+              <Node name="Data" expanded="True">
+                <Node name="Repositories" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -26,11 +22,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.ApiDDD.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
