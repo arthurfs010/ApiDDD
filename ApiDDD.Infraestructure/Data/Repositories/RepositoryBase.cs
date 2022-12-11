@@ -46,7 +46,7 @@ namespace ApiDDD.Infraestructure.Data.Repositories
             return _sqlContext.Set<TEntity>().ToList();
         }
 
-        public TEntity GetByCodigo(long codigo)
+        public TEntity GetByCodigo(int codigo)
         {
             return _sqlContext.Set<TEntity>().Find(codigo);
         }

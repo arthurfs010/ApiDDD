@@ -2,42 +2,42 @@
 using System.Collections.Generic;
 using ApiDDD.Application.DTO;
 using ApiDDD.Application.Interface;
-using ApiDDD.Application.Interface.Mapper;
 using ApiDDD.Domain.ApiDDD.Domain.Core.Interfaces.Service;
 using ApiDDD.Domain.Entities;
+using AutoMapper;
 
 namespace ApiDDD.Application
 {
 	public class ApplicationServiceProduto : IApplicationServiceProduto
 	{
         private readonly IServiceProduto _serviceProduto;
-        private readonly IMapperProduto _mapperProduto;
+        private readonly IMapper _mapper;
 
-        public ApplicationServiceProduto(IServiceProduto serviceProduto, IMapperProduto mapperProduto)
+        public ApplicationServiceProduto(IServiceProduto serviceProduto, IMapper mapper)
         {
             _serviceProduto = serviceProduto;
-            _mapperProduto = mapperProduto;
+            _mapper = mapper;
         }
 
         public IEnumerable<ProdutoDTO> GetAll()
         {
             var produtos = _serviceProduto.GetAll();
 
-            return _mapperProduto.MapperListProdutosDTO(produtos);
+            return _mapper.Map<IEnumerable<ProdutoDTO>>(produtos);
         }
 
-        public ProdutoDTO GetByCodigo(long codigo)
+        public ProdutoDTO GetByCodigo(int codigo)
         {
             Produto produto = _serviceProduto.GetByCodigo(codigo);
 
-            return _mapperProduto.MapperEntityToDTO(produto);
+            return _mapper.Map<ProdutoDTO>(produto);
         }
 
         public void Remove(ProdutoDTO produtoDTO)
         {
             produtoDTO.Situacao = false;
 
-            Produto produto = _mapperProduto.MapperDTOToEntity(produtoDTO);
+            Produto produto = _mapper.Map<Produto>(produtoDTO);
 
             _serviceProduto.Update(produto);
         }
@@ -46,7 +46,7 @@ namespace ApiDDD.Application
         {
             ValidarRegras(produtoDTO);
 
-            Produto produto = _mapperProduto.MapperDTOToEntity(produtoDTO);
+            Produto produto = _mapper.Map<Produto>(produtoDTO);
 
             if (produto.Codigo == 0)
             {
@@ -60,7 +60,7 @@ namespace ApiDDD.Application
         {
             ValidarRegras(produtoDTO);
 
-            Produto produto = _mapperProduto.MapperDTOToEntity(produtoDTO);
+            Produto produto = _mapper.Map<Produto>(produtoDTO);
 
             _serviceProduto.Update(produto);
         }

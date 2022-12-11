@@ -12,7 +12,7 @@ namespace ApiDDD.Domain.ApiDDD.Domain.Core.Interfaces.Service
 
         IEnumerable<TEntity> GetAll();
 
-        TEntity GetByCodigo(long codigo);
+        TEntity GetByCodigo(int codigo);
     }
 }
 

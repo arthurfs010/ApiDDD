@@ -11,7 +11,7 @@ namespace ApiDDD.Domain.Core.Interfaces.Repository
 
         IEnumerable<TEntity> GetAll();
 
-		TEntity GetByCodigo(long codigo);
+		TEntity GetByCodigo(int codigo);
 	}
 }
 

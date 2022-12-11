@@ -21,13 +21,13 @@ namespace ApiDDD.API.Controllers
         }
 
         [HttpGet("{codigo}")]
-        public ActionResult<string> Get(long codigo)
+        public ActionResult<string> Get(int codigo)
         {
             return Ok(_applicationServiceProduto.GetByCodigo(codigo));
         }
 
         [HttpGet]
-        public ActionResult<string> Get()
+        public ActionResult<string> GetAll()
         {
             return Ok(_applicationServiceProduto.GetAll());
         }

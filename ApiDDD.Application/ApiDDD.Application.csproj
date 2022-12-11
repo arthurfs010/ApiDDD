@@ -13,13 +13,11 @@
     <None Remove="Interface\" />
     <None Remove="EntityFramework" />
     <None Remove="Microsoft.EntityFrameworkCore" />
-    <None Remove="Interface\Mapper\" />
     <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DTO\" />
     <Folder Include="Interface\" />
-    <Folder Include="Interface\Mapper\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.17" />

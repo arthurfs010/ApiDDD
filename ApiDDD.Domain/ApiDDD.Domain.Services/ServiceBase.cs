@@ -19,7 +19,7 @@ namespace ApiDDD.Domain.ApiDDD.Domain.Services
             return _repositoryBase.GetAll();
         }
 
-        public TEntity GetByCodigo(long codigo)
+        public TEntity GetByCodigo(int codigo)
         {
             return _repositoryBase.GetByCodigo(codigo);
         }

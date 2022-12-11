@@ -14,7 +14,7 @@ namespace ApiDDD.Application.Interface
 
 		IEnumerable<ProdutoDTO> GetAll();
 
-		ProdutoDTO GetByCodigo(long codigo);
+		ProdutoDTO GetByCodigo(int codigo);
 	}
 }
 

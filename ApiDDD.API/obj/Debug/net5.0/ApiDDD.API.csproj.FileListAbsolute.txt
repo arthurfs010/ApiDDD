@@ -75,11 +75,15 @@
 /Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/ApiDDD.API.Views.pdb
 /Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/Autofac.dll
 /Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/Autofac.Extensions.DependencyInjection.dll
+/Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/AutoMapper.dll
+/Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.dll
 /Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Abstractions.dll
 /Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Relational.dll
 /Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.dll
 /Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/Microsoft.Extensions.Options.dll
+/Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/Microsoft.Extensions.Primitives.dll
 /Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/Microsoft.OpenApi.dll
 /Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/Npgsql.dll
 /Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
@@ -87,6 +91,7 @@
 /Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/System.Diagnostics.DiagnosticSource.dll
+/Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/System.Runtime.CompilerServices.Unsafe.dll
 /Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/ApiDDD.Application.dll
 /Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/ApiDDD.Domain.dll
 /Users/arthur/Projects/ApiDDD/ApiDDD.API/bin/Debug/net5.0/ApiDDD.Infraestructure.dll

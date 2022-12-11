@@ -2,13 +2,13 @@
 using System.ComponentModel;
 using ApiDDD.Application;
 using ApiDDD.Application.Interface;
-using ApiDDD.Application.Interface.Mapper;
-using ApiDDD.Application.Mappper;
+using ApiDDD.Application.Mapper;
 using ApiDDD.Domain.ApiDDD.Domain.Core.Interfaces.Service;
 using ApiDDD.Domain.ApiDDD.Domain.Services;
 using ApiDDD.Domain.Core.Interfaces.Repository;
 using ApiDDD.Infraestructure.Data.Repositories;
 using Autofac;
+using AutoMapper;
 
 namespace ApiDDD.Infraestructure.CrossCutting.IOC
 {
@@ -19,7 +19,14 @@ namespace ApiDDD.Infraestructure.CrossCutting.IOC
 			builder.RegisterType<ApplicationServiceProduto>().As<IApplicationServiceProduto>();
 			builder.RegisterType<ServiceProduto>().As<IServiceProduto>();
 			builder.RegisterType<RepositoryProduto>().As<IRepositoryProduto>();
-			builder.RegisterType<MapperProduto>().As<IMapperProduto>();
+
+			builder.Register(reg => new MapperConfiguration(cfg =>
+			{
+				cfg.AddProfile(new DtoToModelMappingProduto());
+				cfg.AddProfile(new ModelToDtoMappingProduto());
+			}));
+
+			builder.Register(reg => reg.Resolve<MapperConfiguration>().CreateMapper()).As<IMapper>().InstancePerLifetimeScope();
         }
 	}
 }
